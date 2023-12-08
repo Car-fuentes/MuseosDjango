@@ -1,0 +1,36 @@
+{%extends 'core/base.html'%}
+
+{%block content%}
+{% load static %}
+
+<main>
+    <div>
+        <img src={% static 'core/assets/home/aerea_obelisco.png'%}>
+    </div>
+    <div class="cajaPrincipal">
+        <div>
+            <h2 class="titulo2">Museos de la Ciudad de Buenos Aires</h2>
+            <h3>Explora el Arte, la Historia y la Cultura de Buenos Aires a Través de Nuestra Guía de Museos.</h3>
+            <p>Bienvenido a la guía de museos de la Ciudad de Buenos Aires, Argentina. Diseñada para que aproveches
+                al máximo tu visita, nuestra plataforma te invita a sumergirte en la riqueza cultural de la ciudad a
+                través de una cuidadosa selección de museos que abarcan desde el arte contemporáneo hasta la
+                fascinante historia local.</p>
+        </div>
+        <div class="contenedorMuseos">
+            <div class="cajamuseo fotoarte">
+                <a href="{% url 'arte'%}" class="museo-nombre">Museos de Arte</a>
+            </div>
+            <div class="cajamuseo fotohistoria">
+                <a href="{% url 'historia'%}" class="museo-nombre">Museos de Historia</a>
+            </div>
+            <div class="cajamuseo fotociencia">
+                <a href="{% url 'ciencias'%}" class="museo-nombre">Museos de Ciencias</a>
+            </div>
+            <div class="cajamuseo fototematico">
+                <a href="{% url 'tematicos'%}" class="museo-nombre">Museos Temáticos</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock%}
