@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock%}</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'core/assets/home/museo.png' %} type=image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        
+        <div>{% block header %}<h1 class="titulo"></h1>{% endblock %}
+            
+        </div>
+        <nav>     
+            <ul>
+                <li><a href="{% url 'home' %}">Inicio - </a></li>
+                <li ><a href="{% url 'museos' %}">Museos </a> </li>
+                <li><a href="{% url 'contacto' %}">Contacto - </a></li>
+                <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <div class="row">
+        
+    {%block content %}{% endblock %}
+</body>
+
+
+<footer>{% block footer%}{% endblock %}
+    <div class="pie">
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="blank">
+                <img src="{% static 'core/Assets/home/instagram.ico' %}">
+            </a>
+            <a href="https://facebook.com" target="blank">
+                <img src="{% static 'core/Assets/home/facebook.ico' %}">
+            </a>
+            <a href="https://twitter.com/" target="blank">
+                <img src="{% static 'core/Assets/home/twitter.ico' %}">
+            </a>
+            <a href="https://t.me/" target="blank">
+                <img src="{% static 'core/Assets/home/telegram.ico' %}">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>

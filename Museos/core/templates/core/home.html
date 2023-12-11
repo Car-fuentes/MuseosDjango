@@ -1,0 +1,25 @@
+{%extends 'core/base.html'%}
+{% block title %}Portada{% endblock %}
+
+{% block header %}<h1 class="titulo">Buenos Aires</h1>{% endblock %}
+
+{%block content%}
+{% load static %}
+
+<main>
+    <div>
+        <img src="{% static 'core/assets/home/aerea_obelisco.png'%}">
+    </div>
+    <div class="cajaPrincipal">
+        <div>
+            <h2 class="titulo2">Museos de la Ciudad de Buenos Aires</h2>
+            <h3>Conoce los museos de Buenos Aires</h3>
+            <p>Bienvenido a la guía de museos de la Ciudad de Buenos Aires, Argentina. Diseñada para que aproveches
+                al máximo tu visita, nuestra plataforma te invita a sumergirte en la riqueza cultural de la ciudad Mediante nuestra base de datos
+            en la que podrás encontrar los museos mas importantes de la Ciudad</p>
+        </div>
+       
+    </div>
+</main>
+
+{% endblock%}
