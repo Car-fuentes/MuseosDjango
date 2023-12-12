@@ -1,9 +1,11 @@
 {%extends 'core/base.html'%}
 {% block title %}Museos{% endblock %}
 {% block header %}<h1 class="titulo">Museos</h1>{% endblock %}
+{% load static %}
 
 {%block content%}
-{% load static %}
+
+{{Museo}}
 <h1 class="titulo2">Lista de Museos que puedes llegar a conocer</h1>
 <div class="contenedorMuseos">
 
