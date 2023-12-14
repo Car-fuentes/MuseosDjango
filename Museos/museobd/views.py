@@ -5,4 +5,4 @@ from .models import Museo
 
 def museos(request):
     museos = Museo.objects.all()
-    return render(request,"museos/museos.html"), {'Museos': museos}
+    return render(request,"museos/museos.html", {'museos': museos})

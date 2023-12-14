@@ -9,10 +9,11 @@
 
 <h1 class="titulo2">Lista de Museos que puedes llegar a conocer</h1>
 <div class="contenedorMuseos">
-    <h2 class="titulo2">Lista de Museos que puedes llegar a conocer</h2>
     <h3>Explora el Arte, la Historia y la Cultura de Buenos Aires a Través de Nuestra Guía de Museos.</h3>
-    <div class="contenedorMuseos">
-     
+    <div class="contenedorMuseos"></div>
+
+      {{museos}}
+
         {% for museo in museos %}
         <div class="container">
             <h1 class="nombre-museo">{{museo.museo}}</h1>
