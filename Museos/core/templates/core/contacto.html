@@ -1,9 +1,10 @@
 {%extends 'core/base.html'%}
+{% load static %}
 {% block title %}Contacto{% endblock %}
 {% block header %}<h1 class="titulo">Contacto</h1>{% endblock %}
 
 {%block content%}
-{% load static %}
+
 <h1 class="titulo2">Dejanos conocer tu opinión</h1>
 
 <form action="https://formspree.io/f/mgejdqbl" method="POST" onsubmit="return validarFormulario(event)">

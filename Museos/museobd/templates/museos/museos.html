@@ -1,11 +1,12 @@
 {%extends 'core/base.html'%}
+{% load static %}
 {% block title %}Museos{% endblock %}
 {% block header %}<h1 class="titulo">Museos</h1>{% endblock %}
 {% load static %}
 
 {%block content%}
 
-{{museo}}
+
 <h1 class="titulo2">Lista de Museos que puedes llegar a conocer</h1>
 <div class="contenedorMuseos">
     <h2 class="titulo2">Lista de Museos que puedes llegar a conocer</h2>
@@ -17,8 +18,8 @@
             <h1 class="nombre-museo">{{museo.museo}}</h1>
             <h3 width="100%">{{museo.descripción}}</h3>
             <h3>{{museo.direccion}}</h3>
-            
             <img src="{{museo.imagen}}" alt="" width="100%">
+        {%endfor%}
     
 </div>
 {%endblock%}

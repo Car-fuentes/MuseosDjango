@@ -4,5 +4,5 @@ from .models import Museo
 # Create your views here.
 
 def museos(request):
-    museo = Museo.objects.all()
-    return render(request,"museobd/museos.html"), {'Museos': museo}
+    museos = Museo.objects.all()
+    return render(request,"museos/museos.html"), {'Museos': museos}
