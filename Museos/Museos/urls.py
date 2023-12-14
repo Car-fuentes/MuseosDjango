@@ -23,7 +23,7 @@ from museobd import views as museobd_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    path('museos/', museobd_views.museobd, name="museos"),
+    path('museos/', museobd_views.museos, name="museos"),
     path('nosotros/', views.nosotros, name="nosotros"),
     path('contacto/', views.contacto, name="contacto"),
     
