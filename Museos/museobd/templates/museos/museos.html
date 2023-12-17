@@ -6,19 +6,20 @@
 
 {%block content%}
 
+        <h1 class="titulo2">Lista de Museos que puedes llegar a conocer</h1>
+        <h3 class="subtitulo-museos">Explora el Arte, la Historia y la Cultura de Buenos Aires a Través de Nuestra Guía de Museos.</h3>
+<div class="contenedor-museos">
 
-<h1 class="titulo2">Lista de Museos que puedes llegar a conocer</h1>
-<div class="contenedorMuseos">
-    <h3>Explora el Arte, la Historia y la Cultura de Buenos Aires a Través de Nuestra Guía de Museos.</h3>
-    <div class="contenedorMuseos"></div>
+     {{museos}}
 
         {% for museo in museos %}
-        <div class="container">
-            <h1 class="nombre-museo">{{museo.museo}}</h1>
-            <h3 width="100%">{{museo.descripción}}</h3>
-            <img src="{{museo.imagen.url}}" alt="" width="50%">
-            <h3>{{museo.dirección}}</h3>
+
+        <div class="museo-caja">
+            <h2 class="nombre-museo">{{museo.museo}}</h2>
+            <img src="{{museo.imagen.url}}" alt="imagen Museo" width="100%">
+            <h4>{{museo.dirección}}</h4>
+            <p>{{museo.descripción}} </p>
+        </div>
         {%endfor%}
-    
 </div>
 {%endblock%}
