@@ -80,7 +80,7 @@ li a{
 /*-----Main ------ */
 
 .cajaObelisco {
-    background-image: url('./assets/home/obelisco.jpg');
+    background-image: url('./assets/home/aerea_obelisco.png');
     background-size: cover;
     background-position: center;   
     font-family: 'Roboto', sans-serif;
@@ -151,8 +151,8 @@ li a{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
         }
     
     .museo-caja{
@@ -165,14 +165,14 @@ li a{
             position: relative;
             grid-column: cabecera/final;
             grid-row: titulo/contenido;
-            padding: 10px 20px;
+            padding: 5px 20px;
      }
 
     .museo-caja img{
         position: relative;
         grid-column: cabecera/texto;
         grid-row:contenido/fin;
-        padding: 10px 20px;
+        padding: 5px 5px;
         width:100%;  
     }
 
@@ -180,14 +180,14 @@ li a{
         position: relative;
         grid-column: texto/final;
         grid-row: contenido/descripcion;
-        padding: 10px 20px;
+        padding: 5px 5px;
     }
 
     .museo-caja p{
         position: relative;
         grid-column: texto/final;
         grid-row: descripcion/fin;
-        padding: 10px 50px 10px 20px;
+        padding: 5px 20px 5px 5px;
     }
 
 /*Footer*/
