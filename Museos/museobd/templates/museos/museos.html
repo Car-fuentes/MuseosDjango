@@ -12,14 +12,12 @@
     <h3>Explora el Arte, la Historia y la Cultura de Buenos Aires a Través de Nuestra Guía de Museos.</h3>
     <div class="contenedorMuseos"></div>
 
-      {{museos}}
-
         {% for museo in museos %}
         <div class="container">
             <h1 class="nombre-museo">{{museo.museo}}</h1>
             <h3 width="100%">{{museo.descripción}}</h3>
-            <h3>{{museo.direccion}}</h3>
-            <img src="{{museo.imagen}}" alt="" width="100%">
+            <img src="{{museo.imagen.url}}" alt="" width="100%">
+            <h3>{{museo.dirección}}</h3>
         {%endfor%}
     
 </div>
